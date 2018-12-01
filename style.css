@@ -1,0 +1,54 @@
+body,
+html {
+  height: 100%;
+}
+.bg-info {
+  opacity: 1;
+  -webkit-box-shadow: 7px 10px 21px -5px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 7px 10px 21px -5px rgba(0, 0, 0, 0.5);
+  box-shadow: 7px 10px 21px -5px rgba(0, 0, 0, 0.5);
+  background: cornflowerblue !important;
+}
+
+form {
+  margin: 0 auto;
+}
+
+body {
+  background-image: url(img/beautiful-bloom-blooming-666839.jpg);
+  height: 100%;
+  width: auto;
+  background-position: center;
+
+  background-size: cover;
+}
+
+.alert-top {
+  margin-top: 20px;
+}
+
+li {
+  background: rgb(248, 230, 230) !important;
+  /* -webkit-box-shadow: 7px 10px 21px -5px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 7px 10px 21px -5px rgba(0, 0, 0, 0.5);
+  box-shadow: 7px 10px 21px -5px rgba(0, 0, 0, 0.5); */
+}
+
+i,
+li {
+  font-size: 15px;
+}
+
+ul i {
+  color: lightskyblue;
+}
+
+.fa-temperature-high,
+.fa-temperature-low {
+  font-size: 20px !important;
+  font-style: bold;
+}
+
+.w-desc {
+  text-transform: uppercase !important;
+}
