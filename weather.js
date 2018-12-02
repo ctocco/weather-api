@@ -1,10 +1,3 @@
-class onLoad {
-  constructor(long, lat) {
-    this.long = long;
-    this.lat = lat;
-  }
-}
-
 class Weather {
   constructor(city, metric, imperial) {
     this.weatherAPI = `https://api.openweathermap.org/data/2.5/weather?q=`;
