@@ -17,22 +17,17 @@
     <title>Weather JS</title>
   </head>
   <body class="bg-light">
+    
     <div class="container">
-
-        <div class="alert alert-dismissible alert-warning alert-top">
-            <button type="button" class="close" data-dismiss="alert">&times;</button>
-            <h4 class="alert-heading">Oops!</h4>
-            <p class="mb-0">City not found or no value was entered. Please try to enter a city again.<a href="#" class="alert-link">vel scelerisque nisl consectetur et</a>.</p>
-          </div>
-
+      
       <div class="row">
     
         <div class="main col-md-6 mx-auto text-center bg-info  disabled mt-5 p-4 rounded">
-
-        <h4 class="c-time text-left col-6 rounded"><i class="fas fa-clock"></i> 12:05</h4>
+            <h4 class=" text-muted text"><strong>LOCAL WEATHER</strong></h4>
+        <h4 class="c-time text-left col-6 rounded"></h4>
        
         <h1 id="w-location" class="text-dark font-weight-bold"></h1>
-        <h6 class="time col-12 rounded text-light">TODAY DEC 4TH</h6>
+        <h6 class="w-date col-12 rounded text-light">TODAY DEC 4TH</h6>
         <h3 class="text-light" id="w-desc">Cloudy</h3>
         <h2 id="w-string" class="text-light"><i class="fas fa-temperature-high"></i> 7° /<i class="fas fa-temperature-low"></i> 3°C </h3>
         <img id="w-icon"/>
@@ -45,11 +40,11 @@
             <li class="list-group-item" id="w-cloudiness"><strong><i class="fas fa-cloud"></i> Cloudiness:</strong> 90%</li>
           </ul>
           <hr>
-          <form>
+          <form class="form">
               <div class="input-group mb-0 p-1">
-                  <input type="text" class="form-control" placeholder="Choose a different city" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                  <input id="city-form" type="text" class="city-form form-control" placeholder="Choose a different city" aria-label="Recipient's username" aria-describedby="basic-addon2">
                   <div class="input-group-append">
-                    <button class="btn btn-info" type="button">Change City</button>
+                    <button class="btn btn-info" type="submit">Change City</button>
                 </div>
               </div>
           </form>

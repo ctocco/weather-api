@@ -28,7 +28,7 @@ body {
 }
 
 li {
-  background: rgb(248, 230, 230) !important;
+  background: rgb(255, 250, 254) !important;
   /* -webkit-box-shadow: 7px 10px 21px -5px rgba(0, 0, 0, 0.5);
   -moz-box-shadow: 7px 10px 21px -5px rgba(0, 0, 0, 0.5);
   box-shadow: 7px 10px 21px -5px rgba(0, 0, 0, 0.5); */
@@ -51,4 +51,10 @@ ul i {
 
 .w-desc {
   text-transform: uppercase !important;
+}
+
+.text {
+  text-align: center;
+  text-align: right;
+  color: azure !important;
 }

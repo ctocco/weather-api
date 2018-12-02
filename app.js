@@ -1,11 +1,31 @@
+//Init Storage
+const storage = new Storage();
+
+// Get the stored location data
+const weatherLocation = storage.getLocationData();
+console.log(storage.getLocationData());
+
 // Init weather object
-const weather = new Weather("Sydney");
+const weather = new Weather(weatherLocation.city);
+
+// Init new UI
+const ui = new UI();
 
 // Get weather on DOM Load
 document.addEventListener("DOMContentLoaded", getWeather);
 
-// Init new UI
-const ui = new UI();
+//Change the location
+document.querySelector("form").addEventListener("submit", e => {
+  this.city = document.querySelector(".form-control").value;
+  console.log(city);
+  e.preventDefault();
+
+  weather.changeLocation(city);
+
+  storage.setLocationData(city);
+
+  getWeather();
+});
 
 // weather.changeLocation("Miami", "FL");
 
@@ -16,5 +36,6 @@ function getWeather() {
       console.log(results);
       ui.paint(results);
     })
-    .catch(err => console.log(err));
+    .catch(err => ui.errorD(err));
+  // console.log(err);
 }
