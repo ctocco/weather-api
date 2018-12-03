@@ -27,9 +27,11 @@ class UI {
 
     // this.img = document.querySelector(".body");
   }
-  paint(weather) {
+  paint(weather, uvIndex) {
+    console.log(weather);
+    console.log(uvIndex);
     this.imgValue = `${weather.weather[0].main}`;
-    console.log(this.imgValue);
+    // console.log(this.imgValue);
     function testNum(img) {
       if (img == "Clouds") {
         return "img/clouds.jpg";
@@ -54,6 +56,9 @@ class UI {
     }
     this.pic = testNum(this.imgValue);
     this.img.style.backgroundImage = `url(${this.pic})`;
+    this.uv.innerHTML = `<strong><i class="fas fa-sun"></i> Visibility:</strong> ${
+      weather.visibility
+    }`;
 
     this.location.textContent = `
     ${weather.name}, ${weather.sys.country}`;

@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", getWeather);
 //Change the location
 document.querySelector("form").addEventListener("submit", e => {
   this.city = document.querySelector(".form-control").value;
-  console.log(city);
+  // console.log(city);
   e.preventDefault();
 
   weather.changeLocation(city);
@@ -34,7 +34,7 @@ function getWeather() {
     .getWeather()
     .then(results => {
       console.log(results);
-      ui.paint(results);
+      ui.paint(...results);
     })
     .catch(err => ui.errorD(err));
   // console.log(err);
