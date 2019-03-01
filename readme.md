@@ -1,0 +1,1 @@
+This is one of my first experiments with JS. It is a weather app using vanilla JS and the weather API displaying weather from around the world. The pictures in the background will change depending on the weather of the location you select. Basic weather information is displyed for your selected city. Enjoy!
